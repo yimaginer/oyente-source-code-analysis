@@ -14,6 +14,7 @@ log = logging.getLogger(__name__)
 # FOR NEW TYPE OF ANALYSIS: add necessary details to the skeleton functions
 # 这是为了定义 ANALYSIS 的骨架
 # FOR NEW TYPE OF ANALYSIS：向骨架函数添加必要的细节
+# THIS IS TO DEFINE A SKELETON FOR ANALYSIS
 
 def set_cur_file(c_file):
     global cur_file
