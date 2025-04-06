@@ -195,8 +195,8 @@ class InputHelper:
     # 生成 .evm 和 .evm.disam 文件(去结尾 hash 的 runtime_bytecode,对字节码进行 Disassembly)
     def _prepare_disasm_file(self, target, bytecode):
         # 写入 evm 字节码文件
-        self._write_evm_file(target, bytecode)
-        self._write_disasm_file(target)
+        self._write_evm_file(target, bytecode) # 向 *.sol 写入 .evm 文件(去结尾 hash 的 runtime_bytecode)
+        self._write_disasm_file(target) # 生成 .evm.disasm 文件(字节码，pc opcode value ...)(方便阅读)
 
     def _get_temporary_files(self, target):
         return {
